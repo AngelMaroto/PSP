@@ -15,7 +15,7 @@ public class MainPuerto {
         Thread h4 = new Thread(b4);
         Thread h5 = new Thread(b5);
 
-        b1.setDependencia(h5);
+        b1.setDependencia(h5, h3);
 
         h1.start();
         h2.start();

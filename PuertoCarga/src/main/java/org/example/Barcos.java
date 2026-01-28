@@ -12,8 +12,10 @@ public class Barcos implements Runnable{
         this.puerto = puerto;
     }
 
-    public void setDependencia(Thread otradependencia) {
+    public void setDependencia(Thread otradependencia, Thread dependencia2) {
+
         this.dependencia = otradependencia;
+        this.dependencia = dependencia2;
     }
 
     @Override
